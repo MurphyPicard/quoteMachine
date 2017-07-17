@@ -4,10 +4,10 @@ $(document).ready(function() {
 
       $.ajax({
 
-        
+
 
         type: 'GET',
-        url: "http://api.icndb.com/jokes/random",
+        url: "https://api.icndb.com/jokes/random",
         dataType: 'json',
         success: function(result){
               $(".thequote").html(result.value.joke);
