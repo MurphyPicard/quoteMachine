@@ -3,6 +3,9 @@ $(document).ready(function() {
     $(".submit1").on("click", function(){
 
       $.ajax({
+
+        
+
         type: 'GET',
         url: "http://api.icndb.com/jokes/random",
         dataType: 'json',
@@ -15,6 +18,20 @@ $(document).ready(function() {
     });//button
 
 });//doc
+
+// $.ajax({
+//             url: uri,
+//             beforeSend: function (request) {
+//                 request.setRequestHeader("Authorization", "Negotiate");
+//             },
+//             async: true,
+//             success: function (data) {
+//                 alert(JSON.stringify(data));
+//             },
+//             error: function (xhr, textStatus, errorMessage) {
+//                 alert(errorMessage);
+//             }
+//         });
 
 // $( document ).ready(function() {
 //    console.log( "ready!" );
